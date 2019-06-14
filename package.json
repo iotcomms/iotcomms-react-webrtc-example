@@ -1,11 +1,20 @@
 {
-  "name": "webrtc-client-example",
-  "version": "0.1.0",
-  "private": true,
+  "name": "iotcomms-react-webrtc-example",
+  "version": "1.0.0",
+  "description": "React.js application example of how to use iotcomms-react-webrtc component",
+  "license": "MIT",
   "dependencies": {
+    "babel-preset-react": "^6.24.1",
+    "iotcomms-react-webrtc": "^1.0.0",
     "react": "^16.8.6",
+    "react-bootstrap": "^1.0.0-beta.9",
     "react-dom": "^16.8.6",
+    "react-query-params": "^1.0.9",
     "react-scripts": "3.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iotcomms/iotcomms-react-webrtc.git"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -27,5 +36,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-plugin-react": "^7.13.0",
+    "typescript": "^3.5.2"
   }
 }
