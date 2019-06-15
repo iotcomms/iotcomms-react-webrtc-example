@@ -44,6 +44,7 @@ class App extends ReactQueryParams {
           autoRegister = {true}
 
           sipDomain={decodeURIComponent(this.queryParams.domain)}
+          sipServer={decodeURIComponent(this.queryParams.sipserver)}
           sipUser={decodeURIComponent(this.queryParams.userid)}
           sipPassword={decodeURIComponent(this.queryParams.password)}
 

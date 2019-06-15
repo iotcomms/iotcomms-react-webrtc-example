@@ -6,16 +6,16 @@ To get started:
 #npm install
 #npm start
 ```
-The demo application takes domain, userid, password and destination URL parameters. 
+The demo application takes domain, userid, password and destination URL parameters.
 Note! You must use ```encodeURIComponent()``` to encode these values before putting them as parameters.
 
-For example
+For example:
 
 http://localhost:3000/?userid=myuser&domain=sip.sipdomain.com&password=encodedpassword&destination=user%40sip.sipdomain.com
 
 
-Caution! The user of URL parameters for password and userid is for development and test purpose only! Dont do this in production.
+Caution! The use of URL parameters for password and userid is for development and test purpose only! Don't do this in production.
 
-The relevant source code example is App.js found in the src directory.
+The relevant source code example is found in App.js in the src directory.
 
 *This project is sponsored by [iotcomms.io](https://iotcomms.io).*
