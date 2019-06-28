@@ -47,8 +47,8 @@ class App extends ReactQueryParams {
           sipServer={decodeURIComponent(this.queryParams.sipserver)}
           sipUser={decodeURIComponent(this.queryParams.userid)}
           sipPassword={decodeURIComponent(this.queryParams.password)}
-
           destination={decodeURIComponent(this.queryParams.destination)}
+          metaData={{param1:"value1",obj1:{objparam1:"objvalue1"}}}
         />
       </div>
     );
