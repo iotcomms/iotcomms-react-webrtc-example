@@ -21,8 +21,6 @@ class App extends ReactQueryParams {
 
   constructor(props,context) {
     super(props,context);
-    this.webRtcClientRef = React.createRef();
-    this.callControlsRef = React.createRef();
   }
 
 
@@ -35,20 +33,16 @@ class App extends ReactQueryParams {
         <video width="25%"  id="localVideo" autoPlay playsInline  muted="muted"></video>
         <video width="50%" id="remoteVideo" autoPlay playsInline ></video>
         <WebRTCClient
-          //sipDomain="sip.test.iotcomms.io"
-          //sipUser="webrtc"
-          //sipPassword="jun*=vlQtNUSeXW@"
-          //destination="+46706662326@sip.test.iotcomms.io"
           video={true}
-          //destination="jbj2@sip.test.iotcomms.io"
           autoRegister = {true}
-
           sipDomain={decodeURIComponent(this.queryParams.domain)}
           sipServer={decodeURIComponent(this.queryParams.sipserver)}
           sipUser={decodeURIComponent(this.queryParams.userid)}
           sipPassword={decodeURIComponent(this.queryParams.password)}
           destination={decodeURIComponent(this.queryParams.destination)}
           metaData={{param1:"value1",obj1:{objparam1:"objvalue1"}}}
+          //alertVideoUrl="alertVideoUrl"
+          //ringbackVideoUrl="ringbackVideoUrl"
         />
       </div>
     );
